@@ -1,0 +1,45 @@
+
+/*Global*/
+
+#home-page {
+    display: grid;
+    grid-row-gap: 2em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*Header Section*/
+
+#header {
+   display: grid;
+   grid-template-columns: 5fr 1fr;
+  
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+#header .cart-icon {
+    width: 25px;
+    padding: 0.50em;
+}
+
+/*Navigation Section*/
+
+#nav-bar {
+    text-align: center;
+    padding: 0.50em;
+    margin-right: 10em;
+}
+
+#nav-bar a {
+    font-size: 0.90em;
+    padding: 0.75em;
+}
