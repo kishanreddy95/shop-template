@@ -4,6 +4,8 @@
 #home-page {
     display: grid;
     grid-row-gap: 2em;
+    margin: 1.5em 0 0 0;
+    padding: 0;
 }
 
 a {
@@ -11,19 +13,25 @@ a {
     text-decoration: none;
 }
 
+.main-images img{
+    height: auto;
+    width: 100%;
+}
+
+#home-page .shop-now  {
+    justify-self: center;
+}
 
 /*Header Section*/
 
 #header {
    display: grid;
-   grid-template-columns: 5fr 1fr;
-  
+   grid-template-columns: 95% 5%;
 }
 
 #header h1 {
     text-align: center;
     font-size: 1em;
-    
 }
 
 #header .cart-icon {
@@ -36,10 +44,34 @@ a {
 #nav-bar {
     text-align: center;
     padding: 0.50em;
-    margin-right: 10em;
 }
 
 #nav-bar a {
     font-size: 0.90em;
     padding: 0.75em;
 }
+
+/*Men's Outerwear Section*/
+
+#mens-outerwear {
+    display: grid;
+}
+
+
+/*Ladies Outerwear Section*/
+
+#ladies-outerwear {
+    display: grid;
+}
+ 
+/* T-Shirts Section*/
+
+#tshirts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#tshirts img {
+    height: 300px;
+}
+
