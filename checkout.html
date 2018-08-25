@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <title>Checkout Form</title>
+  <meta name="author" content="kishanreddy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="checkout">    
+    <header id="header">
+      <a href="main.html"><h1>Shop</h1></a>
+      <a href="cart.html"><img src="./images/local_grocery_store_black_192x192.png" style="width:30px"></a>
+    </header>
+    <section id="form">
+      <div class="form-title">
+        <h4>Checkout</h4>
+      </div>
+      <div class="form">
+        <form id="account-info-form">
+          <p>Account Information</p>
+          <input type="text" name="email" value="Email">
+          <input type="text" name="number" value="Phone Number">
+          <p>Shipping Address</p>
+          <input type="text" name="address" value="Address">
+          <input type="text" name="city" value="City">
+          <input type="text" name="state" value="State">
+          <input type="number" name="postal-code" value="Zip/Postal Code">
+          <select>
+            <option value="country">USA</option>
+            <option value="country">USA</option>
+          </select>
+          <p>Billing Address</p>
+          <input type="radio">Use Different billing address
+        </form>
+        <form id="payment-info-form">
+          <input type="text" name="card-holder-name" value="Cardholder Name">
+          <input type="text" name="card-number" value="Card Number">
+          <p>Expiry</p>
+          <select class="payment-card-options">
+            <option value="january">Jan</option>
+            <option value="february">Feb</option>
+            <option value="march">March</option>
+            <option value="april">Apr</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">Aug</option>
+            <option value="september">Sept</option>
+            <option value="october">Oct</option>
+            <option value="november">Nov</option>
+            <option value="december">Dec</option>
+          </select>
+          <select class="payment-card-options">
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+          </select>
+          <input type="text" name="cvv" value="CVV">
+        </form>
+       </div>
+       <div class="order-summary">
+         <div>
+           <p>Men's Tech Shell Full Zip</p>
+           <p>$50.20</p>
+         </div>
+         <div>
+           <p>Total</p>
+           <p>$50.20</p>
+         </div>
+         <a href="#">Place order</a>
+       </div>
+    </section>
+</body>
