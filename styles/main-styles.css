@@ -31,6 +31,10 @@ a {
     background-repeat: no-repeat;
 }
 
+h2 {
+    font-weight: lighter;
+}
+
 /*Header Section*/
 
 #header {
@@ -125,3 +129,49 @@ a {
 }
 
 
+/*Media Queries*/
+
+/*Medium Sized Screens*/
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    /*Navigation Section*/ 
+
+    #nav-bar {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        justify-content: center;
+        font-size: 0.90em;
+    }
+
+    #nav-bar a {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /*Navigation Section*/ 
+
+    #nav-bar {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        font-size: 0.75em;
+    }
+
+    #nav-bar a {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    /*Navigation Section*/ 
+
+    #nav-bar {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        font-size: 0.75em;
+    }
+}
