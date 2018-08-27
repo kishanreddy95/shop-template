@@ -29,12 +29,90 @@ body {
 
 /*Item Preview Styles*/
 
-.item-preview-container {
+#item-preview-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
+    color: gray;
 }
 
-.item-preview-container .item-image img {
+#item-preview-container .item-image {
+    margin: auto;
+    width: 60%;
+}
+
+#item-preview-container .item-image img {
     width: auto;
-    height: 500px;
+    height: 600px;
+}
+
+
+/*Item Description Section*/
+
+#item-preview-container .item-description {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.item-dropdown {
+    margin-top: 2.5em;
+}
+
+.item-dropdown p {
+    display: inline;
+}
+
+.item-dropdown .item-size select {
+    margin-left: 1.75em;
+}
+
+.item-dropdown select {
+    width: 85%;
+    border: 0;
+    background: white;
+    padding: 1em;
+    font-size: 1em;
+}
+
+#item-preview-container .item-info {
+    font-size: 1em;
+}
+
+#item-preview-container .item-info p, ul{
+    font-size: 0.90em;
+}
+li {
+    margin-top: 0.30em;
+}
+
+.add-to-cart-button {
+    display: block;
+    border: 2px solid black;
+    padding: 0.6em 1em 0.6em 1em;
+    margin-top: 2em;
+    text-align: center;
+    width: 40%;
+}
+
+label {
+    font-size: 0.85em;
+}
+
+/*Items Font Colors*/ 
+
+.item-description h3 {
+    color: black;
+}
+
+.item-info h4, h5 {
+    color: black;
+}
+
+/*Item Borders*/
+
+.item-quantity, .item-size {
+    border-top: 1px solid rgb(184, 180, 180);
+}
+
+.item-quantity {
+    border-bottom: 1px solid rgb(184, 180, 180);
 }
