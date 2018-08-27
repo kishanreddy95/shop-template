@@ -35,7 +35,16 @@ a {
 
 #header {
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 10% 80% 10%;
+}
+
+#header .back-icon img {
+    width: 25px;
+    height: auto;
+    text-align: end;
+    margin-top: 1em;
+    margin-left: 0.75em;
+    display: none;
 }
 
 #header .title {

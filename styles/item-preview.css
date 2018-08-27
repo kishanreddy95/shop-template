@@ -11,6 +11,10 @@ body {
     grid-gap: 3em;
     margin-bottom: 3em;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 /*Header Styles*/
 
@@ -19,13 +23,47 @@ body {
     grid-template-columns: 10% 80% 10%;
 }
 
-#item-preview-page #header .back-icon img {
+#item-preview-page .title h1 {
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+#item-preview-page .cart {
+    text-align: end;
+    margin-right: 1em;
+}
+
+#item-preview-page .cart .cart-icon {
+    width: 25px;
+    height: auto;
+    text-align: end;
+    margin-top: 1em;
+}
+
+#item-preview-page .back-icon img {
     width: 25px;
     height: auto;
     text-align: end;
     margin-top: 1em;
     margin-left: 0.75em;
 }
+
+#item-preview-page .title {
+    text-align: center;
+}
+
+/*Navigation Styles*/
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 10%);
+    justify-content: center;
+}
+
+#nav-bar a {
+    text-align: center;
+}
+
 
 /*Item Preview Styles*/
 
