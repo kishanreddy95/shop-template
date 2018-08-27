@@ -1,0 +1,89 @@
+/*Global*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#checkout {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 3em;
+    margin-bottom: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.shop-now-button {
+    display: block;
+    border: 2px solid black;
+    padding: 0.75em 1em 0.75em 1em;
+    text-align: center;
+}
+
+input {
+    display: block;
+}
+
+#checkout select  {
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 0.50em;
+}
+
+/*Checkout Form Styles*/
+
+#form {
+    display: grid;  
+    justify-items: center;
+}
+
+#form .form-section {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 5em;
+}
+
+/*Account Info Form*/
+
+#form #account-info-form {
+    display: grid;
+    grid-gap: 2em;
+}
+
+#form #payment-info-form {
+    display: grid;
+    grid-gap: 2em;  
+}
+
+.form-section #account-info-form input {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-bottom: 1px solid rgb(184, 180, 180);
+}
+.form-section #payment-info-form input {
+    padding: 0.10em;
+}
+
+.form-area input {
+    width: 80%;
+}
+
+.form-area {
+    display: grid;
+    grid-template-columns: 50% 58%;
+    grid-column-gap: 1em;
+    justify-items: start;
+    align-items: start;
+}
+
+.form-card-expiry {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 1em;
+    justify-items: start;
+}
