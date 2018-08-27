@@ -1,9 +1,7 @@
 /*Global*/
-
 body {
     margin: 0;
     padding: 0;
-    margin: auto;
 }
 
 #home-page {
@@ -23,6 +21,14 @@ a {
     border: 2px solid black;
     padding: 0.75em 1em 0.75em 1em;
     text-align: center;
+}
+
+.main-images {
+    height: 300px;
+    width: 100%;
+    background-image: url('../images/mens_outerwear.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*Header Section*/
@@ -68,7 +74,6 @@ a {
 /*Men's Outerwear*/
 
 #mens-outerwear {
-    margin: auto;
     display: grid;
 }
 
@@ -80,7 +85,6 @@ a {
 
 #ladies-outerwear {
     display: grid;
-    margin: auto;
 }
 
 #ladies-outerwear .shop-now {
@@ -91,8 +95,7 @@ a {
 
 #tshirts {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 720px 720px;
+    grid-template-columns: 50% 50%;
 }
 
 #mens-tshirts {
