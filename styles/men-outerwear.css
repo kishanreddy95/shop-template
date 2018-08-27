@@ -41,3 +41,54 @@ body {
     font-weight: bold;
 }
 
+/*Media Queries*/
+
+/*Medium Sized Screens*/
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    
+    /*Mens-outerwear Preview Images*/
+
+    .mens-outwear-item-container img {
+        width: 75%;
+        height: auto;
+    }
+
+    .mens-outwear-item-container .item-title {
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: 0.75em
+    }
+
+}
+
+/*Small Sized Screens*/
+
+@media screen and (max-width: 768px) {
+
+    /*Header*/
+
+    #header .cart .cart-icon { 
+        margin-right: 1em;
+    }
+
+    /*Men's Item Container*/
+
+    .main-images {
+        display: none;
+    }
+
+    .mens-outwear-item-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .mens-outwear-item-container .item-title {
+        margin-top: 0.50em;
+        font-weight: bold;
+        font-size: 0.75em
+    }
+}
+
+
