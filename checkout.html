@@ -40,7 +40,10 @@
             <option value="country">Canada</option>
           </select>
           <p>Billing Address</p>
-          <input type="radio">Use Different billing address
+          <div class="alternate-billing">
+            <input type="checkbox" name="address" placeholder="Billing Address">
+            <p>Use different billing address</p>
+          </div>
         </form>
         <form id="payment-info-form">
           <p>Payment Method</p>
@@ -70,16 +73,16 @@
             </select>
             <input type="text" name="cvv" value="CVV">
           </div>
-          <div class="order-summary">
-            <div>
+          <div id="order-summary">
+            <div class="order-items">
               <p>Men's Tech Shell Full Zip</p>
-              <p>$50.20</p>
+              <p class="order-price">$50.20</p>
             </div>
-            <div>
+            <div class="total-order">
               <p>Total</p>
-              <p>$50.20</p>
+              <p class="order-price">$50.20</p>
             </div>
-            <a href="#">Place order</a>
+            <a class="place-order-button" href="#">Place order</a>
           </div>
         </form>
        </div>

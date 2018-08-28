@@ -13,6 +13,10 @@ body {
     margin-bottom: 3em;
 }
 
+.form-title {
+    text-align:center;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -34,8 +38,8 @@ input {
     border: none;
     width: 80%;
     padding: 0.30em; */
-    width: 80%;
-	height:30px;
+    width: 100%;
+	height: auto;
 	border:none;
 	background-color: white;
 	border-bottom:solid 1px lightgray
@@ -47,25 +51,38 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    grid-gap: 0 7em;
+    grid-gap: 0 5em;
 }
 
 /*Account Info Form*/
 
 #form #account-info-form {
     width: 80%;
-    justify-self: end;
+    justify-self: center;
+
 }
+
+#account-info-form * {
+    margin-top: 2em;
+}
+
+#payment-info-form * {
+    margin-top: 2em;
+}
+
+#payment-info-form .form-card-expiry {
+    margin-top: 0;
+}
+
 
 #form #payment-info-form {
     width: 80%;
-    justify-self: end;
+    justify-self: center;
 }
 
 .form-section #account-info-form input {
-    width: 80%%;
-	justify-self:end;
-    padding: 0.75em;
+    width: 100%;
+    padding: 0.75em 0 0.75em 0;
     border: none;
     border-bottom: 1px solid rgb(184, 180, 180);
 }
@@ -76,18 +93,64 @@ input {
     border: none;
     border-bottom: 1px solid rgb(184, 180, 180);
 } 
+
 .form-area input {
     width: 80%;
 }
 
 .form-section .form-area {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 5px;
+    grid-template-columns: repeat(2, 42%);
+    grid-column-gap: 4em;
+    justify-content: center;
 }
 
 .form-card-expiry {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 25%);
+    grid-column-gap:1.5em;
 }
 
+#account-info-form .alternate-billing {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+#account-info-form .alternate-billing input {
+    margin-top: 0;
+}   
+
+#account-info-form .alternate-billing p {
+    margin-top: 0.5em;
+}
+
+/*Order Summary Section*/
+
+#order-summary {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.order-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+}
+
+#order-summary .total-order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+}
+
+#order-summary .order-price {
+    text-align: end;
+}
+
+.place-order-button {
+    display: block;
+    width: 50%;
+    border: 2px solid black;
+    padding: 0.75em 1em 0.75em 1em;
+    text-align: center;
+}
