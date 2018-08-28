@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>Cart</title>
-      <meta name="author" content="kishanreddy">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./styles/main-styles.css">
-      <link rel="stylesheet" href="./styles/cart-styles.css">
-  </head>
-  <body id="cart">
-    <header id="header">
-      <div class="back-icon">
-        <a href="cart.html"><img class="cart-icon" src="./images/arrow_back_black_192x192.png"></a>
-      </div>
-      <div class="title">
-        <a href="main.html"><h1>SHOP</h1></a>
-      </div>
-      <div class="cart">
-        <a href="cart.html"><img class="cart-icon" src="./images/local_grocery_store_black_192x192.png"></a>
-      </div> 
-    </header>
-    <section id="cart-content">
-      <p class="cart-item-number">Your Cart</p>
-      <p class="cart-item-number">(1 item)</p>
-      <div class="cart-items">
-        <img src="./images/10-15068B.jpg">
-        <p class="item-desc">Men's Tech Shell Full-Zip </p>
-        <label>Qty:<select>
+
+<head>
+  <title>Cart</title>
+  <meta name="author" content="kishanreddy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main-styles.css">
+  <link rel="stylesheet" href="./styles/cart-styles.css">
+</head>
+
+<body id="cart">
+  <header id="header">
+    <div class="back-icon">
+      <a href="cart.html">
+        <img class="cart-icon" src="./images/arrow_back_black_192x192.png">
+      </a>
+    </div>
+    <div class="title">
+      <a href="main.html">
+        <h1>SHOP</h1>
+      </a>
+    </div>
+    <div class="cart">
+      <a href="cart.html">
+        <img class="cart-icon" src="./images/local_grocery_store_black_192x192.png">
+      </a>
+    </div>
+  </header>
+  <div class="cart-title">
+    <p class="cart-item-number">Your Cart</p>
+    <p class="cart-item-number">(1 item)</p>
+  </div>
+    <div class="cart-items">
+      <img src="./images/10-15068B.jpg">
+      <p class="item-desc">Men's Tech Shell</p>
+      <div class="quantity">
+        <span>Qty:</span>
+        <select>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-        </select></label>
-        <p>Size:  M</p>
-        <p>$50.20</p>
-        <p>X</p>
+        </select>
       </div>
-      <div class="total">
-        <h4>Total:  $50.20</h4>
-        <a href="checkout.html">CHECKOUT</a>
-      </div>
-    </section>
-  </body>
+      <p>Size: M</p>
+      <p>$50.20</p>
+      <p>X</p>
+    </div>
+    </div>
+    <div class="total">
+      <h4>Total: $50.20</h4>
+      <a href="checkout.html">CHECKOUT</a>
+    </div>
+</body>
+
 </html>

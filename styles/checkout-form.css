@@ -27,63 +27,65 @@ input {
     display: block;
 }
 
-#checkout select  {
+#checkout #account-info-form select  {
     background-color: white;
     border: none;
     width: 100%;
-    padding: 0.50em;
-}
+    padding: 2em;
+} 
+
+#checkout #payment-info-form select  {
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 0.30em;
+} 
 
 /*Checkout Form Styles*/
 
-#form {
-    display: grid;  
-    justify-items: center;
-}
-
-#form .form-section {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-column-gap: 5em;
+.form-section {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
 }
 
 /*Account Info Form*/
 
 #form #account-info-form {
-    display: grid;
-    grid-gap: 2em;
+    margin-right: 2em;
+    align-content: space-between;
 }
 
 #form #payment-info-form {
-    display: grid;
-    grid-gap: 2em;  
+    margin-left: 2em;
 }
 
-.form-section #account-info-form input {
+/* .form-section #account-info-form input {
     width: 100%;
     padding: 0.75em;
     border: none;
     border-bottom: 1px solid rgb(184, 180, 180);
 }
 .form-section #payment-info-form input {
-    padding: 0.10em;
-}
-
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-bottom: 1px solid rgb(184, 180, 180);
+} */
+/* 
 .form-area input {
     width: 80%;
-}
+} */
 
 .form-area {
-    display: grid;
-    grid-template-columns: 50% 58%;
-    grid-column-gap: 1em;
-    justify-items: start;
-    align-items: start;
+    display: flex;
+    flex-direction: row;
 }
 
 .form-card-expiry {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 1em;
-    justify-items: start;
+    display: flex;
+
 }
+
+/*Payment Form Styles*/
+
