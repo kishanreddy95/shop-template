@@ -11,9 +11,14 @@ body {
     grid-gap: 3em;
     margin-bottom: 3em;
 }
+
 a {
     text-decoration: none;
     color: black;
+}
+
+#cart-footer {
+    display: none;
 }
 
 /*Header Styles*/
@@ -74,13 +79,13 @@ a {
 }
 
 #item-preview-container .item-image {
-    margin: auto;
-    width: 60%;
+    margin: 0 0 0 3em;
+    width: 100%;
 }
 
-#item-preview-container .item-image img {
-    width: auto;
-    height: 600px;
+#item-preview-container .item-image img{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -93,14 +98,6 @@ a {
 
 .item-dropdown {
     margin-top: 2.5em;
-}
-
-.item-dropdown p {
-    display: inline;
-}
-
-.item-dropdown .item-size select {
-    margin-left: 1.75em;
 }
 
 .item-dropdown select {
@@ -145,12 +142,85 @@ label {
     color: black;
 }
 
-/*Item Borders*/
 
-.item-quantity, .item-size {
+/*Item Size And Quantity*/ 
+
+.item-size {
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    justify-self: center;
     border-top: 1px solid rgb(184, 180, 180);
+    border-bottom: 1px solid rgb(184, 180, 180);
 }
 
-.item-quantity {
+.item-size .labels {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+.item-size .labels .first-border {
     border-bottom: 1px solid rgb(184, 180, 180);
+    padding: 0.87em;
+}
+
+.item-size .label-values .second-border {
+    border-bottom: 1px solid rgb(184, 180, 180);
+}
+ 
+.item-size select {
+    width: 100%;
+    margin-left: 0;
+}
+
+
+
+/*Media Queries*/
+
+/*Medium Sized Screens*/
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    #item-preview-container .item-description {
+        margin: auto;
+        width: 90%;
+    }
+
+    #item-preview-container .item-image {
+        margin: 0 0 0 1.5em;
+    }
+
+}
+
+/*Small Screens*/
+
+@media screen and (max-width: 768px) {
+
+    #nav-bar {
+        display: none;
+    }
+
+    #item-preview-container {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr; 
+        color: gray;
+    }
+
+    #cart-footer {
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: rgb(28, 28, 78);
+        bottom: 0;
+        text-align: center;
+        color: white; 
+        font-size: 1.25em;
+    }
+
+    .add-to-cart-button {
+        display: none;
+    }
 }

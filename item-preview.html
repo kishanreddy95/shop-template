@@ -4,6 +4,7 @@
       <title>Responsive Ecommerce</title>
       <meta name="author" content="kishanreddy">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles/main-styles.css">
       <link rel="stylesheet" href="./styles/item-preview.css">
   </head>
   <body id="item-preview-page">
@@ -34,24 +35,25 @@
       <p>$50.20</p>
       <div class="item-dropdown">
         <div class="item-size">
-          <label>Size
-          <select>
-            <option value="XL">XL</option>
-            <option value="L">L</option>
-            <option value="M">M</option>
-            <option value="S">S</option>
-          </select></label>
-        </div>
-        <div class="item-quantity">
-          <label>Quantity
-          <select>   
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select></label>
-        </div>
+          <div class="labels">
+            <label class="first-border">Size</label>
+            <label>Quantity</label>
+          </div>
+          <div class="label-values">
+            <select class="second-border">
+              <option value="XL">XL</option>
+              <option value="L">L</option>
+              <option value="M">M</option>
+              <option value="S">S</option>
+            </select>
+            <select>   
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+          </div>
       </div>
       <div class="item-info">
         <h4>Description</h4>
@@ -67,5 +69,8 @@
       </div>
     </div>
   </section>
+  <footer id="cart-footer">
+    <p>Add to Cart</p>
+  </footer>
   </body>
 </html>

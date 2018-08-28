@@ -148,6 +148,8 @@ h2 {
     }
 }
 
+/*Small Screens*/
+
 @media screen and (max-width: 768px) {
     
     /*Navigation Section*/ 
