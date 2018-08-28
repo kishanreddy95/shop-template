@@ -5,6 +5,8 @@ body {
 }
 
 #checkout {
+    width: 80%;
+    margin: auto;
     display: grid;
     grid-template-rows: auto;
     grid-gap: 3em;
@@ -27,65 +29,65 @@ input {
     display: block;
 }
 
-#checkout #account-info-form select  {
-    background-color: white;
+#checkout select  {
+    /* background-color: white;
     border: none;
-    width: 100%;
-    padding: 2em;
-} 
-
-#checkout #payment-info-form select  {
-    background-color: white;
-    border: none;
-    width: 100%;
-    padding: 0.30em;
+    width: 80%;
+    padding: 0.30em; */
+    width: 80%;
+	height:30px;
+	border:none;
+	background-color: white;
+	border-bottom:solid 1px lightgray
 } 
 
 /*Checkout Form Styles*/
 
 .form-section {
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    grid-gap: 0 7em;
 }
 
 /*Account Info Form*/
 
 #form #account-info-form {
-    margin-right: 2em;
-    align-content: space-between;
+    width: 80%;
+    justify-self: end;
 }
 
 #form #payment-info-form {
-    margin-left: 2em;
+    width: 80%;
+    justify-self: end;
 }
 
-/* .form-section #account-info-form input {
-    width: 100%;
+.form-section #account-info-form input {
+    width: 80%%;
+	justify-self:end;
     padding: 0.75em;
     border: none;
     border-bottom: 1px solid rgb(184, 180, 180);
 }
 .form-section #payment-info-form input {
-    width: 100%;
+    width: 80%;
+	justify-self:end;
     padding: 0.75em;
     border: none;
     border-bottom: 1px solid rgb(184, 180, 180);
-} */
-/* 
+} 
 .form-area input {
     width: 80%;
-} */
+}
 
-.form-area {
-    display: flex;
-    flex-direction: row;
+.form-section .form-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
 }
 
 .form-card-expiry {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-
-/*Payment Form Styles*/
 
