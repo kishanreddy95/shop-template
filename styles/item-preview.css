@@ -60,9 +60,11 @@ a {
 /*Navigation Styles*/
 
 #nav-bar {
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 10%);
+    grid-template-columns: repeat(4, 20%);
     justify-content: center;
+    margin: auto;
 }
 
 #nav-bar a {
@@ -191,7 +193,6 @@ label {
     #item-preview-container .item-image {
         margin: 0 0 0 1.5em;
     }
-
 }
 
 /*Small Screens*/
@@ -207,6 +208,11 @@ label {
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr; 
         color: gray;
+    }
+
+    #item-preview-container .item-image {
+        margin: 0;
+        width: 100%;
     }
 
     #cart-footer {

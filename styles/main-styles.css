@@ -75,9 +75,11 @@ h2 {
 /*Navigation Section*/ 
 
 #nav-bar {
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 10%);
+    grid-template-columns: repeat(4, 20%);
     justify-content: center;
+    margin: auto;
 }
 
 #nav-bar a {
