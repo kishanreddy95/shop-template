@@ -158,8 +158,8 @@ h2 {
 
     #nav-bar {
         display: grid;
-        grid-template-columns: repeat(4, 20%);
-        font-size: 0.75em;
+        grid-template-columns: repeat(4, 25%);
+        font-size: 0.65em;
     }
 
     #nav-bar a {
@@ -175,7 +175,7 @@ h2 {
 
     #nav-bar {
         display: grid;
-        grid-template-columns: repeat(4, 25%);
-        font-size: 0.75em;
+        grid-template-columns: repeat(4, 30%);
+        font-size: 0.6em;
     }
 }
