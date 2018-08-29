@@ -34,10 +34,6 @@ input {
 }
 
 #checkout select  {
-    /* background-color: white;
-    border: none;
-    width: 80%;
-    padding: 0.30em; */
     width: 100%;
 	height: auto;
 	border:none;
@@ -45,9 +41,21 @@ input {
 	border-bottom:solid 1px lightgray
 } 
 
+h4 {
+    margin-bottom: 0;
+}
+
+p {
+    font-weight: bold;
+}
+
+#checkout-footer {
+    display: none;
+}
+
 /*Checkout Form Styles*/
 
-.form-section {
+#form .form-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
@@ -59,25 +67,10 @@ input {
 #form #account-info-form {
     width: 80%;
     justify-self: center;
-
 }
 
 #account-info-form * {
     margin-top: 2em;
-}
-
-#payment-info-form * {
-    margin-top: 2em;
-}
-
-#payment-info-form .form-card-expiry {
-    margin-top: 0;
-}
-
-
-#form #payment-info-form {
-    width: 80%;
-    justify-self: center;
 }
 
 .form-section #account-info-form input {
@@ -86,29 +79,16 @@ input {
     border: none;
     border-bottom: 1px solid rgb(184, 180, 180);
 }
-.form-section #payment-info-form input {
-    width: 80%;
-	justify-self:end;
-    padding: 0.75em;
-    border: none;
-    border-bottom: 1px solid rgb(184, 180, 180);
-} 
 
-.form-area input {
+#account-info-form .form-area input {
     width: 80%;
 }
 
-.form-section .form-area {
+#account-info-form .form-area {
     display: grid;
     grid-template-columns: repeat(2, 42%);
     grid-column-gap: 4em;
     justify-content: center;
-}
-
-.form-card-expiry {
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    grid-column-gap:1.5em;
 }
 
 #account-info-form .alternate-billing {
@@ -122,6 +102,36 @@ input {
 
 #account-info-form .alternate-billing p {
     margin-top: 0.5em;
+    font-weight: normal;
+}
+
+/*Payment Info Form*/
+
+#form #payment-info-form {
+    width: 80%;
+    justify-self: center;
+}
+
+#payment-info-form input {
+    width: 80%;
+	justify-self:end;
+    padding: 0.75em;
+    border: none;
+    border-bottom: 1px solid rgb(184, 180, 180);
+} 
+
+#payment-info-form .form-card-expiry {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-column-gap:1.5em;
+}
+
+#payment-info-form * {
+    margin-top: 2em;
+}
+
+#payment-info-form .form-card-expiry {
+    margin-top: 0;
 }
 
 /*Order Summary Section*/
@@ -131,16 +141,20 @@ input {
     grid-template-rows: 1fr 1fr;
 }
 
-.order-items {
+#order-summary .order-items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-top: 0;
+    font-size: 0.80em;
+    font-weight: bold;
 }
 
 #order-summary .total-order {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 0;
+    font-size: 0.80em;
+    font-weight: bold;
 }
 
 #order-summary .order-price {
@@ -153,4 +167,83 @@ input {
     border: 2px solid black;
     padding: 0.75em 1em 0.75em 1em;
     text-align: center;
+}
+
+
+/*Media Queries*/
+
+
+/*Medium Sized Devices*/
+
+@media screen and (max-width: 1024px) {
+
+
+    /*Form Area*/
+
+    .form-section .form-area {
+        grid-column-gap: 2.5em;
+    }
+
+    #account-info-form .form-area {
+        display: grid;
+        grid-template-columns: repeat(2, 46%);
+        grid-column-gap: 1em;
+        justify-content: center;
+    }
+}
+
+/*Small Screen Devices*/
+
+@media screen and (max-width: 768px) {
+
+    #checkout {
+        margin-bottom: 8em;
+    }
+
+
+    #form .form-section {
+        display: grid;
+        grid-template-columns: none;
+        margin: auto;
+        grid-gap: 0 5em;
+    }
+
+    #account-info-form .form-area {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-column-gap: 3em;
+        justify-items: center;
+    }
+
+    #payment-info-form input {
+        width: 100%;
+        justify-self: end;
+        padding: 0.75em;
+        border: none;
+        border-bottom: 1px solid rgb(184, 180, 180);
+    }
+
+    #form .form-card-expiry {
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-column-gap: 4em;
+        justify-self: center;
+    }
+
+
+    .place-order-button {
+        display: none;
+    }
+
+    #checkout-footer {
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: rgb(28, 28, 78);
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        color: white; 
+        font-size: 1.25em;
+    }
 }
